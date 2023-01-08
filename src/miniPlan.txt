@@ -1,0 +1,4 @@
+Structure:
+- Product page
+- Profile page
+- Cart page

@@ -2,37 +2,162 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.blue {
+  filter: invert(56%) sepia(19%) saturate(990%) hue-rotate(186deg)
+    brightness(97%) contrast(86%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.flex {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.flex > * {
+  margin: 0 5px;
+}
+
+.edit {
+  width: 30px;
+  height: 30px;
+}
+
+.edit:hover {
+  cursor: pointer;
+}
+
+.line-products {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  overflow-x: auto;
+  margin: 10px 0;
+}
+
+.line-products > * {
+  margin-right: 15px;
+}
+
+.product-card {
+  min-width: 18rem;
+  width: 18rem;
+  min-height: 18rem;
+  height: 18rem;
+  background-color: #495057;
+  border-radius: 1rem;
+  border: medium solid #343a40;
+  padding: 10px;
+  overflow: hidden;
+  color: black;
+  font-size: 16px;
+  position: relative;
+  margin-left: 25px;
+}
+
+.product-card-price {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  color: green;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: default;
+}
+
+.product-card-img {
+  height: 30%;
+  overflow: hidden;
+}
+
+.product-card-img > img {
+  height: 100%;
+  width: auto;
+}
+
+.product-card-title {
+  height: 10%;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.product-card-description {
+  height: 40%;
+  overflow-y: auto;
+}
+
+.product-card-actions {
+  height: 20%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.product-card-actions > * {
+  margin: 0 5px;
+}
+
+.cash {
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  margin: auto 10px;
+  user-select: none;
+}
+
+.cash:hover {
+  color: white;
+  cursor: default;
+}
+
+.alert {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+}
+
+.cart-products {
+  background-color: #343a40;
+  width: 80%;
+  margin: 10px auto;
+  padding: 10px 20px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.cart-card {
+  margin: 15px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cart-card-img {
+  width: 100px;
+  height: 100px;
+}
+
+.cart-card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart-card-right {
+  width: 80%;
+  text-align: left;
+}
+
+.cart-card-left {
+  width: 20%;
+}
+
+.total-price {
+  margin: 15px 0 100px 0;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.danger {
+  background-color: brown;
+  color: white;
 }
